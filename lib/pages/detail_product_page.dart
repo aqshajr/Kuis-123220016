@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart'; // Import package url_launcher
 import '../model/phone_model.dart';
-import '../data/phone_data.dart';
+// import '../data/phone_data.dart';
 // mas mba maaf tombol storagenya udh setengah jalan dibuat tp masih eror
 // jd sementara saya komen dulu sebagian
 
@@ -57,14 +57,14 @@ class DetailProductPage extends StatelessWidget {
                         fontSize: 18,
                       ),
                     ),
-                    // Text(
-                    //   '\$${product.price.toStringAsFixed(2)}',
-                    //   style: const TextStyle(
-                    //     fontWeight: FontWeight.bold,
-                    //     fontSize: 16,
-                    //     color: Colors.green,
-                    //   ),
-                    // ),
+                    Text(
+                      '\$${product.price.indexed.first}',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.green,
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(height: 4),
@@ -155,5 +155,6 @@ class DetailProductPage extends StatelessWidget {
 //           child: Text("GB "),
 //         );
 //   }
-// }
 //
+// }
+
